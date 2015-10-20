@@ -1,4 +1,4 @@
-# handlebars-segment
+# express-hbs-segment
 
 ## Install
 ```
@@ -7,7 +7,7 @@ npm i --save handlebars-segment
 
 ## Usage
 ```javascript
-var segment = require('handlebars-segment');
+var segment = require('express-hbs-segment');
 
 segment.configure({
   cwd: process.cwd(),
@@ -17,5 +17,5 @@ segment.configure({
 ```
 
 ```
-{{segment id="latest_news" config="{ limit: 5 }"}}
+{{segment id="latest_news" limit=5}}
 ```
