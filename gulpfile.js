@@ -1,11 +1,9 @@
-var config = require('./package.json');
 var gulp = require('gulp');
 var gds = require('gulp-dev-server');
 var eslint = require('gulp-eslint');
 var istanbul = require('gulp-istanbul');
 var mocha = require('gulp-mocha');
 var codeclimate = require('gulp-codeclimate-reporter');
-var notify = require('gulp-notify');
 
 gulp.task('dev', function dev() {
   gds.task({
@@ -40,10 +38,6 @@ gulp.task('test', ['test.instrument'], function test() {
     .pipe(istanbul.writeReports({
       dir: './dist/test-report'
     }))
-    .pipe(notify({
-      title: config.name,
-      message: 'Task "test" completed'
-    }))
   ;
 });
 
@@ -52,10 +46,6 @@ gulp.task('lint', function lint() {
     .src(['index.js', 'lib/**/*.js', 'test/**/*.js', 'gulpfile.js'])
     .pipe(eslint())
     .pipe(eslint.format())
-    .pipe(notify({
-      title: config.name,
-      message: 'Task "lint" completed'
-    }))
   ;
 });
 
