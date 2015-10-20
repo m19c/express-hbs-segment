@@ -1,0 +1,40 @@
+{
+  "name": "handlebars-segment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrBoolean/handlebars-segment.git"
+  },
+  "keywords": [
+    "handlebars",
+    "hbs",
+    "segment",
+    "express",
+    "recurring"
+  ],
+  "author": "Marc Binder <marcandrebinder@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrBoolean/handlebars-segment/issues"
+  },
+  "homepage": "https://github.com/MrBoolean/handlebars-segment#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-codeclimate-reporter": "^1.0.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-istanbul": "^0.10.2",
+    "gulp-mocha": "^2.1.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-sequence": "^0.4.1",
+    "mocha": "^2.3.3",
+    "should": "^7.1.0"
+  },
+  "peerDependencies": {
+    "handlebars": "^4.0.3"
+  }
+}
