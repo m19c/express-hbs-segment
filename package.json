@@ -4,11 +4,11 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "./node_modules/.bin/gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrBoolean/handlebars-segment.git"
+    "url": "git+https://github.com/MrBoolean/express-hbs-segment.git"
   },
   "keywords": [
     "handlebars",
@@ -20,9 +20,9 @@
   "author": "Marc Binder <marcandrebinder@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MrBoolean/handlebars-segment/issues"
+    "url": "https://github.com/MrBoolean/express-hbs-segment/issues"
   },
-  "homepage": "https://github.com/MrBoolean/handlebars-segment#readme",
+  "homepage": "https://github.com/MrBoolean/express-hbs-segment#readme",
   "devDependencies": {
     "connect-livereload": "^0.5.3",
     "express": "^4.13.3",
