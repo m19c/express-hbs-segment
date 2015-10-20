@@ -7,17 +7,14 @@ var mocha = require('gulp-mocha');
 var codeclimate = require('gulp-codeclimate-reporter');
 var notify = require('gulp-notify');
 
-gulp.task('dev', ['test', 'lint'], function dev() {
+gulp.task('dev', function dev() {
   gds.task({
     restart: ['lib/**/*.js', 'index.js', 'example/**/*'],
     notify: ['lib/**/*.js', 'index.js', 'example/**/*'],
     server: {
       verbose: true,
       environment: 'development',
-      script: { path: 'example/index.js' },
-      process: {
-        args: ['--harmony']
-      }
+      script: { path: 'example/index.js' }
     }
   });
 
