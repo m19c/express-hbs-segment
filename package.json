@@ -14,6 +14,7 @@
     "handlebars",
     "hbs",
     "segment",
+    "fragment",
     "express",
     "recurring"
   ],
