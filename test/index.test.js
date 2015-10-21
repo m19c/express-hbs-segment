@@ -1,5 +1,4 @@
 var segment = require('../');
-var Promise = require('bluebird');
 var hbs = require('express-hbs');
 
 describe('index', function indexTest() {
@@ -46,6 +45,7 @@ describe('index', function indexTest() {
 
     it('fails', function failTest(done) {
       var template;
+      var isDone;
 
       segment.configure({
         handlebars: hbs,
@@ -57,7 +57,11 @@ describe('index', function indexTest() {
 
       process.on('unhandledRejection', function(err) {
         err.message.should.equal('Cannot find segment "failed"');
-        done();
+
+        if (!isDone) {
+          isDone = true;
+          done();
+        }
       });
     });
 
